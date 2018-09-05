@@ -1,13 +1,19 @@
 package red.softgrip.com.red.Adapter;
 
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.concurrent.TimeUnit;
 
+import red.softgrip.com.red.Activities.CompUserHistory;
+import red.softgrip.com.red.Activities.RequestHistory;
 import red.softgrip.com.red.R;
 
 /**
@@ -16,6 +22,7 @@ import red.softgrip.com.red.R;
 
 public class RequestHistoryAdaptor extends RecyclerView.Adapter<RequestHistoryAdaptor.ReqViewHolder>{
 
+//    private Context mContext;
     private String[] StartPoint;
     private String[] EndPoint;
     private String[] Date;
@@ -33,8 +40,38 @@ public class RequestHistoryAdaptor extends RecyclerView.Adapter<RequestHistoryAd
 
     @Override
     public ReqViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        final View view;
         LayoutInflater inflater=LayoutInflater.from(parent.getContext());
-        View view=inflater.inflate(R.layout.location_view_design,parent,false);
+         view=inflater.inflate(R.layout.location_view_design,parent,false);
+
+        final ReqViewHolder viewHolder=new ReqViewHolder(view);
+
+        viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(viewHolder.itemView.getContext(), CompUserHistory.class);
+//                // sending data process
+//                i.putExtra("anime_name",mData.get(viewHolder.getAdapterPosition()).getName());
+////                i.putExtra("anime_description",mData.get(viewHolder.getAdapterPosition()).getDescription());
+////                i.putExtra("anime_studio",mData.get(viewHolder.getAdapterPosition()).getStudio());
+////                i.putExtra("anime_category",mData.get(viewHolder.getAdapterPosition()).getCategorie());
+////                i.putExtra("anime_nb_episode",mData.get(viewHolder.getAdapterPosition()).getNb_episode());
+//
+                Bundle bundle=new Bundle();
+//                bundle.putString("value","khana");
+                bundle.putString("sPoint",viewHolder.textViewStartPoints.getText().toString());
+                bundle.putString("ePoint",viewHolder.textViewEndPoints.getText().toString());
+                bundle.putString("sTime",viewHolder.textViewSTime.getText().toString());
+                bundle.putString("amont",viewHolder.textViewAmont.getText().toString());
+
+               i.putExtras(bundle);
+//
+                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                viewHolder.itemView.getContext().startActivity(i);
+
+            }
+        });
         return new ReqViewHolder(view);
     }
 
@@ -48,7 +85,7 @@ public class RequestHistoryAdaptor extends RecyclerView.Adapter<RequestHistoryAd
         String Dtee=Date[position];
         holder.textViewDate.setText(Dtee);
         String Tmee=Time[position];
-        holder.textViewTimes.setText(Tmee);
+        holder.textViewSTime.setText(Tmee);
         String Ammnt=Amnt[position];
         holder.textViewAmont.setText(Ammnt);
     }
@@ -64,13 +101,18 @@ public class RequestHistoryAdaptor extends RecyclerView.Adapter<RequestHistoryAd
     public class ReqViewHolder extends RecyclerView.ViewHolder
     {
 
-        TextView textViewStartPoints,textViewEndPoints,textViewDate,textViewTimes,textViewAmont;
+        TextView textViewStartPoints,textViewEndPoints,textViewDate,textViewSTime,textViewETime,textViewAmont;
+
+//        LinearLayout view_Container;
+
         public ReqViewHolder(View itemView) {
             super(itemView);
+
+//            view_Container=(LinearLayout)itemView.findViewById(R.id.container);
             textViewStartPoints=itemView.findViewById(R.id.start_locate);
             textViewEndPoints=itemView.findViewById(R.id.end_locate);
             textViewDate=itemView.findViewById(R.id.tv_date);
-            textViewTimes=itemView.findViewById(R.id.tv_time);
+            textViewSTime=itemView.findViewById(R.id.tv_time);
             textViewAmont=itemView.findViewById(R.id.tv_ammount);
         }
     }
