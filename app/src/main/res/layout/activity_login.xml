@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="7"
+    android:background="@drawable/background"
+    tools:context="red.softgrip.com.red.Activities.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="@drawable/app_barr"
+
+        android:gravity="center">
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:id="@+id/spinnerLogin">
+            <!--android:entries="@array/users_arrays">-->
+
+        </Spinner>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="WELCOME! LOGIN TO CONTINUE"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.7"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_facebook"
+            android:background="#63a2f4"
+            android:text="Facebook"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <Button
+            android:id="@+id/btn_google"
+            android:background="#e14b1d"
+            android:text="Google"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="0.7"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="1dp"
+            android:background="#fff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="OR"/>
+      <TextView
+          android:layout_width="170dp"
+          android:layout_height="1dp"
+          android:background="#fff"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="13dp"
+                android:text="EMAIL"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_email"
+                android:hint="useremail@gmail.com"
+                android:textColorHint="@color/colorGray"
+                android:textAlignment="center"
+                app:backgroundTint="@color/colorWhite"
+                android:id="@+id/et_Email"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="13dp"
+                android:text="PASSWORD"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_lock"
+                android:hint="*******"
+                android:textColorHint="@color/colorGray"
+                android:textAlignment="center"
+                app:backgroundTint="@color/colorWhite"
+                android:id="@+id/et_Password"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="Dont have an account?   "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:id="@+id/tv_Register"
+            android:text="REGISTER"/>
+    </LinearLayout>
+
+
+</LinearLayout>

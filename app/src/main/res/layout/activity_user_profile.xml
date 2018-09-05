@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="6"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="red.softgrip.com.red.Activities.UserProfile">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:background="@drawable/app_barr">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/tv_menu"
+            android:background="@drawable/ic_menu"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MENU"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1.5"
+        android:gravity="center">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="JD"
+                android:textSize="35dp"
+                android:textColor="@color/colorGreen"/>
+
+
+            <!--<ImageView-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:id="@+id/imageView1"-->
+                <!--android:src="@drawable/cvv"-->
+                <!--android:elevation="12dp"-->
+                <!--app:cardCornerRadius="40dp">-->
+            <!--</ImageView>-->
+        </android.support.v7.widget.CardView>
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/profile_image"-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="130dp"-->
+            <!--android:src="@drawable/cvv"-->
+            <!--app:civ_border_width="2dp"-->
+            <!--app:civ_border_color="#FF000000"/>-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="John doe"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp"
+            android:text="abc@gmail.com"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/tv_logout"
+            android:textSize="17dp"
+            android:text="Logout"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="2"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:id="@+id/linear_profile"
+                                android:orientation="vertical"
+                                android:background="#a6016801">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_user_profile"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorWhite"
+                                    android:text="PROFILE" />
+
+
+                            </LinearLayout>
+
+        <View
+            android:layout_width="2.5dp"
+            android:layout_height="match_parent"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:id="@+id/linear_payment"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:background="#a6016801">
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:background="@drawable/ic_payment"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorWhite"
+                                    android:text="PAYMENT" />
+                            </LinearLayout>
+    </LinearLayout>
+
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2.5dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/linear_request_history"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="#a6016801">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ic_car_icon"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorWhite"
+                                android:text="REQUEST HISTORY" />
+                        </LinearLayout>
+
+        <View
+            android:layout_width="2.5dp"
+            android:layout_height="match_parent"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/linear_faq"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="#a6016801">
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/ic_faq"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorWhite"
+                                android:text="FAQ" />
+                        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

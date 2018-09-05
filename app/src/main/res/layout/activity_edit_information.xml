@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:weightSum="3"
+    tools:context="red.softgrip.com.red.Activities.EditInformation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:gravity="center"
+        android:background="@drawable/app_barr">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/tv_back"
+            android:background="@drawable/back_icon"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="EDIT INFORMATION"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.3"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="23"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:textColor="@color/colorGreen"
+                android:textSize="13dp"
+                android:text="FIRST NAME"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.6"
+                android:drawableLeft="@drawable/ic_user"
+                android:hint="John"
+                android:textColorHint="@color/colorGray"
+                android:textAlignment="center"
+                app:backgroundTint="@color/colorGreen"
+                android:id="@+id/et_FName_editinfo"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:textColor="@color/colorGreen"
+                android:textSize="13dp"
+                android:text="LAST NAME"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.7"
+                android:drawableLeft="@drawable/ic_user"
+                android:hint="Doe"
+                android:textColorHint="@color/colorGray"
+                android:textAlignment="center"
+                app:backgroundTint="@color/colorGreen"
+                android:id="@+id/et_LName_editinfo"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorGreen"
+                android:textSize="13dp"
+                android:text="EMAIL"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.7"
+                android:drawableLeft="@drawable/ic_email"
+                android:hint="useremail@gmail.com"
+                android:textColorHint="@color/colorGray"
+                android:textAlignment="center"
+                app:backgroundTint="@color/colorGreen"
+                android:id="@+id/et_Email_editinfo"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorGreen"
+                android:textSize="13dp"
+                android:text="PHONE"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.7"
+                android:inputType="phone"
+                android:drawableLeft="@drawable/ic_phone"
+                android:hint="+923366645735"
+                android:textColorHint="@color/colorGray"
+                android:textAlignment="center"
+                app:backgroundTint="@color/colorGreen"
+                android:id="@+id/et_Phone_editinfo"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorGreen"
+                android:textSize="13dp"
+                android:text="PASSWORD"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.7"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_lock"
+                android:hint="*******"
+                android:textColorHint="@color/colorGray"
+                android:textAlignment="center"
+                app:backgroundTint="@color/colorGreen"
+                android:id="@+id/et_Password_editinfo"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorGreen"
+                android:textSize="13dp"
+                android:text="VEHICLE NUMBER"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.7"
+                android:inputType="text"
+                android:drawableLeft="@drawable/ic_car_black"
+                android:hint="MIA123"
+                android:textColorHint="@color/colorGray"
+                android:textAlignment="center"
+                app:backgroundTint="@color/colorGreen"
+                android:id="@+id/et_Vehicle_Number_editinfo"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorGreen"
+                android:textSize="13dp"
+                android:text="VEHICLE MAKE"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.7"
+                android:drawableLeft="@drawable/ic_car_black"
+                android:hint="Toyota"
+                android:textColorHint="@color/colorGray"
+                android:textAlignment="center"
+                app:backgroundTint="@color/colorGreen"
+                android:id="@+id/et_Vehicle_Make_editinfo"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorGreen"
+                android:textSize="13dp"
+                android:text="VEHICLE MODEL"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.7"
+                android:drawableLeft="@drawable/ic_car_black"
+                android:hint="Camry"
+                android:textColorHint="@color/colorGray"
+                android:textAlignment="center"
+                app:backgroundTint="@color/colorGreen"
+                android:id="@+id/et_Vehicle_Model_editinfo"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorGreen"
+                android:textSize="13dp"
+                android:text="YEAR OF MANUFACTURE"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.7"
+                android:drawableLeft="@drawable/ic_car_black"
+                android:hint="2015"
+                android:textColorHint="@color/colorGray"
+                android:textAlignment="center"
+                app:backgroundTint="@color/colorGreen"
+                android:id="@+id/et_Vehicle_manufact_editinfo"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorGreen"
+                android:textSize="13dp"
+                android:text="TYRE SIZE"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.7"
+                android:inputType="text"
+                android:drawableLeft="@drawable/ic_car_black"
+                android:hint="155/80RI2"
+                android:textColorHint="@color/colorGray"
+                android:textAlignment="center"
+                app:backgroundTint="@color/colorGreen"
+                android:id="@+id/et_Tyre_Size_editinfo"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorGreen"
+                android:textSize="13dp"
+                android:text="Insurance COMPANY"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.7"
+                android:inputType="text"
+                android:drawableLeft="@drawable/ic_insurance"
+                android:hint="DirectAsia Insurance"
+                android:textColorHint="@color/colorGray"
+                android:textAlignment="center"
+                app:backgroundTint="@color/colorGreen"
+                android:id="@+id/et_Insurance_comp_editinfo" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:gravity="center"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btn_green"
+            android:text="REGISTER"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

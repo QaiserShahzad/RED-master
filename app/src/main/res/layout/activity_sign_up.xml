@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:background="@drawable/background"
+    tools:context="red.softgrip.com.red.Activities.SignUp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="@drawable/app_barr"
+
+        android:gravity="center">
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:id="@+id/spinnerSignUp">
+            <!--android:entries="@array/users_arrays">-->
+
+        </Spinner>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="0dp"
+        android:weightSum="12"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1.7"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/colorGreen"
+            android:textSize="13dp"
+            android:text="FIRST NAME"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_user"
+            android:hint="John"
+            android:textColorHint="@color/colorGray"
+            android:textAlignment="center"
+            app:backgroundTint="@color/colorGreen"
+            android:id="@+id/et_FName"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/colorGreen"
+            android:textSize="13dp"
+            android:text="LAST NAME"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_user"
+            android:hint="Doe"
+            android:textColorHint="@color/colorGray"
+            android:textAlignment="center"
+            app:backgroundTint="@color/colorGreen"
+            android:id="@+id/et_LName"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/colorGreen"
+            android:textSize="13dp"
+            android:text="EMAIL"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_email"
+            android:hint="useremail@gmail.com"
+            android:textColorHint="@color/colorGray"
+            android:textAlignment="center"
+            app:backgroundTint="@color/colorGreen"
+            android:id="@+id/et_Email"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/colorGreen"
+            android:textSize="13dp"
+            android:text="PHONE"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:inputType="phone"
+            android:drawableLeft="@drawable/ic_phone"
+            android:hint="+923366645735"
+            android:textColorHint="@color/colorGray"
+            android:textAlignment="center"
+            app:backgroundTint="@color/colorGreen"
+            android:id="@+id/et_Phone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/colorGreen"
+            android:textSize="13dp"
+            android:text="PASSWORD"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_lock"
+            android:hint="*******"
+            android:textColorHint="@color/colorGray"
+            android:textAlignment="center"
+            app:backgroundTint="@color/colorGreen"
+            android:id="@+id/et_Password"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/colorGreen"
+            android:textSize="13dp"
+            android:text="CONFIRM PASSWORD"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_lock"
+            android:hint="*******"
+            android:textColorHint="@color/colorGray"
+            android:textAlignment="center"
+            app:backgroundTint="@color/colorGreen"
+            android:id="@+id/et_Confirm_Password"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:text="    I agree to the"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms of service"
+                android:textColor="@color/colorGreen"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_btn_green"
+                android:text="REGISTER"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
