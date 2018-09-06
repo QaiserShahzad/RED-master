@@ -21,20 +21,12 @@
         <activity android:name=".Activities.VerificationCode" />
         <!-- <activity android:name=".Activities.VarificationCode"></activity> -->
         <activity android:name=".Activities.WelcomeScreen" />
-        <activity android:name=".Activities.UserProfile"></activity>
+        <activity android:name=".Activities.UserProfile" />
         <activity android:name=".Activities.Profile" />
         <activity android:name=".Activities.EditInformation" />
         <activity android:name=".Activities.RequestHistory" />
-        <activity android:name=".Activities.CompUserHistory">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
-        <activity android:name=".Activities.TowingAgreement"></activity>
+        <activity android:name=".Activities.TowingAgreement" />
+        <activity android:name=".Activities.ComplUsrHstory"></activity>
     </application>
 
 </manifest>

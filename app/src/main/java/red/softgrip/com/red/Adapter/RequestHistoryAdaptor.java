@@ -1,19 +1,14 @@
 package red.softgrip.com.red.Adapter;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.util.concurrent.TimeUnit;
-
-import red.softgrip.com.red.Activities.CompUserHistory;
-import red.softgrip.com.red.Activities.RequestHistory;
+import red.softgrip.com.red.Activities.ComplUsrHstory;
 import red.softgrip.com.red.R;
 
 /**
@@ -50,7 +45,7 @@ public class RequestHistoryAdaptor extends RecyclerView.Adapter<RequestHistoryAd
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(viewHolder.itemView.getContext(), CompUserHistory.class);
+                Intent i = new Intent(viewHolder.itemView.getContext(), ComplUsrHstory.class);
 //                // sending data process
 //                i.putExtra("anime_name",mData.get(viewHolder.getAdapterPosition()).getName());
 ////                i.putExtra("anime_description",mData.get(viewHolder.getAdapterPosition()).getDescription());
