@@ -32,7 +32,7 @@ public class WelcomeScreen extends AppCompatActivity {
         linearLayoutTow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                startActivity(new Intent(getApplicationContext(),UserProfile.class));
+                startActivity(new Intent(getApplicationContext(),TowingAgreement.class));
             }
         });
     }
