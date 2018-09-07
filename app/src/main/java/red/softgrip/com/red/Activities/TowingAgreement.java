@@ -1,25 +1,30 @@
 package red.softgrip.com.red.Activities;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import red.softgrip.com.red.GoogleMap.MapsActivity;
 import red.softgrip.com.red.R;
 
 public class TowingAgreement extends AppCompatActivity {
 
     Button buttonAgreement;
     Dialog myDialog;
+    LinearLayout linearContinue;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_towing_agreement);
 
+        linearContinue=(LinearLayout) findViewById(R.id.l_continue);
 
         buttonAgreement=(Button)findViewById(R.id.btn_yess);
         buttonAgreement.setOnClickListener(new View.OnClickListener() {
@@ -30,6 +35,13 @@ public class TowingAgreement extends AppCompatActivity {
         });
 
         myDialog = new Dialog(this);
+
+        linearContinue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),MapsActivity.class));
+            }
+        });
     }
 
 

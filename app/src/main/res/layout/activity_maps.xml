@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:weightSum="3"
+    tools:context="red.softgrip.com.red.GoogleMap.MapsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:gravity="center"
+        android:background="@drawable/app_barr">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/tv_menu"
+            android:background="@drawable/back_icon"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENTER LOCATION"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:background="@color/colorWhite">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:drawableLeft="@drawable/ic_red_location_drawable"
+                android:drawableRight="@drawable/ic_pencil"
+                android:hint="Your location"
+                android:textColorHint="@color/colorGray"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textAlignment="center"
+                app:backgroundTint="@color/colorGreen"
+                android:imeOptions="actionSearch"
+                android:id="@+id/et_SPoint"
+                />
+            <Button
+                android:id="@+id/buttonSearch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="@drawable/places_ic_search"
+                tools:ignore="InvalidId" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorGray"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_blue_location_drawable"
+            android:drawableRight="@drawable/ic_pencil"
+            android:hint="Your location"
+            android:textColorHint="@color/colorGray"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textAlignment="center"
+            app:backgroundTint="@color/colorGreen"
+            android:id="@+id/et_DPoint"
+            />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.05">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="red.softgrip.com.red.GoogleMap.MapsActivity" />
+
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_promo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="82dp"
+            android:background="@drawable/shape_edit_text_white"
+            android:drawableLeft="@drawable/ic_cutter"
+            android:hint="Promo Code"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorGray" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/shape_btn_green"
+            android:text="NEXT"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
