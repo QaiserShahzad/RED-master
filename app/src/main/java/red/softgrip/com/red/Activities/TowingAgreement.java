@@ -17,7 +17,7 @@ import red.softgrip.com.red.R;
 public class TowingAgreement extends AppCompatActivity {
 
     Button buttonAgreement;
-    Dialog myDialog;
+//    Dialog myDialog;
     LinearLayout linearContinue;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +30,11 @@ public class TowingAgreement extends AppCompatActivity {
         buttonAgreement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ShowPopup();
+//                ShowPopup();
             }
         });
 
-        myDialog = new Dialog(this);
+//        myDialog = new Dialog(this);
 
         linearContinue.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,27 +45,27 @@ public class TowingAgreement extends AppCompatActivity {
     }
 
 
-
-    public void ShowPopup() {
-        TextView txtclose;
-        Button btnOk;
-        myDialog.setContentView(R.layout.popup_design);
-        txtclose =(TextView) myDialog.findViewById(R.id.txtclose);
-        txtclose.setText("X");
-        btnOk = (Button) myDialog.findViewById(R.id.btn_popup_ok);
-        txtclose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                myDialog.dismiss();
-            }
-        });
-        btnOk.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                myDialog.dismiss();
-            }
-        });
-        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        myDialog.show();
-    }
+//
+//    public void ShowPopup() {
+//        TextView txtclose;
+//        Button btnOk;
+//        myDialog.setContentView(R.layout.popup_design);
+//        txtclose =(TextView) myDialog.findViewById(R.id.txtclose);
+//        txtclose.setText("X");
+//        btnOk = (Button) myDialog.findViewById(R.id.btn_popup_ok);
+//        txtclose.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                myDialog.dismiss();
+//            }
+//        });
+//        btnOk.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                myDialog.dismiss();
+//            }
+//        });
+//        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+//        myDialog.show();
+//    }
 }

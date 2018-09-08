@@ -2,8 +2,11 @@ package red.softgrip.com.red.GoogleMap;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.Dialog;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.location.Address;
 import android.location.Geocoder;
 import android.nfc.Tag;
@@ -52,7 +55,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
 
-    Button buttonSearch;
+    Button buttonSearch,buttonNext;
+    Dialog myDialog;
     private GoogleMap mMap;
     private static final int LOCATION_REQUEST=500;
     ArrayList<LatLng> listPoints;
@@ -68,6 +72,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 //        editTextSPoint=(EditText)findViewById(R.id.et_SPoint);
         editTextEPoint=(EditText)findViewById(R.id.et_DPoint);
         buttonSearch=(Button)findViewById(R.id.buttonSearch);
+        buttonNext=(Button)findViewById(R.id.btn_next);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -75,6 +80,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         listPoints=new ArrayList<>();
 
 
+
+
+        buttonNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ShowPopup();
+            }
+        });
+        myDialog = new Dialog(this);
 
 //        buttonSearch.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -124,6 +138,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, LOCATION_REQUEST);
             return;
         }
+
 
         mMap.setMyLocationEnabled(true);
 
@@ -323,6 +338,31 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 Toast.makeText(MapsActivity.this, "Direction not found !", Toast.LENGTH_SHORT).show();
             }
         }
+    }
+
+
+
+    public void ShowPopup() {
+        TextView txtclose;
+        Button btnOk;
+        myDialog.setContentView(R.layout.popup_design);
+        txtclose =(TextView) myDialog.findViewById(R.id.txtclose);
+        txtclose.setText("X");
+        btnOk = (Button) myDialog.findViewById(R.id.btn_popup_ok);
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myDialog.dismiss();
+            }
+        });
+        btnOk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myDialog.dismiss();
+            }
+        });
+        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        myDialog.show();
     }
 }
 
