@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="2"
-    tools:context="red.softgrip.com.red.Activities.WelcomeScreen">
+    tools:context="red.softgrip.com.red.UserActivities.WelcomeScreen">
 
 
     <LinearLayout

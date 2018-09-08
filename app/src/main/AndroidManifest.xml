@@ -20,8 +20,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.Splash" />
-        <activity android:name=".Activities.Login">
+        <activity android:name=".UserActivities.Splash" />
+        <activity android:name=".UserActivities.Login">
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -30,22 +30,24 @@
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
         </activity>
-        <activity android:name=".Activities.SignUp" />
-        <activity android:name=".Activities.VerificationCode" />
+        <activity android:name=".UserActivities.SignUp" />
+        <activity android:name=".UserActivities.VerificationCode" />
         <!-- <activity android:name=".Activities.VarificationCode"></activity> -->
-        <activity android:name=".Activities.WelcomeScreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".UserActivities.WelcomeScreen">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
-        <activity android:name=".Activities.UserProfile" />
-        <activity android:name=".Activities.Profile" />
-        <activity android:name=".Activities.EditInformation" />
-        <activity android:name=".Activities.RequestHistory" />
-        <activity android:name=".Activities.TowingAgreement"></activity>
-        <activity android:name=".Activities.ComplUsrHstory" />
+        <activity android:name=".UserActivities.UserProfile" />
+        <activity android:name=".UserActivities.Profile" />
+        <activity android:name=".UserActivities.EditInformation" />
+        <activity android:name=".UserActivities.RequestHistory" />
+        <activity android:name=".UserActivities.TowingAgreement" />
+        <activity android:name=".UserActivities.ComplUsrHstory" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -53,7 +55,7 @@
              Note that the API key is linked to the encryption key used to sign the APK.
              You need a different API key for each encryption key, including the release key that is used to
              sign the APK for publishing.
-             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -62,7 +64,16 @@
         <activity
             android:name=".GoogleMap.MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".Activities.OrderSummary"></activity>
+        <activity android:name=".UserActivities.OrderSummary" />
+        <activity android:name=".WorkShopActivities.NewOrderList" />
+        <activity android:name=".WorkShopActivities.NumbrOfOrder">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WorkShopActivities.OrderNumberActivity"></activity>
     </application>
 
 </manifest>

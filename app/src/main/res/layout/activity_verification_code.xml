@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@drawable/background"
     android:weightSum="5"
-    tools:context="red.softgrip.com.red.Activities.VerificationCode">
+    tools:context="red.softgrip.com.red.UserActivities.VerificationCode">
 
     <LinearLayout
         android:layout_width="match_parent"

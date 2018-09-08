@@ -1,4 +1,4 @@
-package red.softgrip.com.red.Adapter;
+package red.softgrip.com.red.UserAdapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import red.softgrip.com.red.R;
-import red.softgrip.com.red.Utils.SpinnerItemsData;
+import red.softgrip.com.red.UserUtils.SpinnerItemsData;
 
 /**
  * Created by Qaiser Pasha on 8/31/2018.

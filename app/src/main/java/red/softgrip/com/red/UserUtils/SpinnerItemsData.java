@@ -1,4 +1,4 @@
-package red.softgrip.com.red.Utils;
+package red.softgrip.com.red.UserUtils;
 
 /**
  * Created by Qaiser Pasha on 8/31/2018.

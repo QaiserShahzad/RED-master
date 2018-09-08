@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="2"
-    android:background="@color/colorWhite"
     android:orientation="vertical"
-    tools:context="red.softgrip.com.red.UserActivities.RequestHistory">
+    android:weightSum="2"
+    android:background="@drawable/background"
+    tools:context="red.softgrip.com.red.WorkShopActivities.NewOrderList">
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.17"
+        android:layout_weight="0.15"
         android:gravity="center"
         android:background="@drawable/app_barr">
 
@@ -21,8 +23,8 @@
             android:layout_height="30dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:id="@+id/tv_backbtn"
-            android:background="@drawable/back_icon"
+            android:id="@+id/tv_back"
+            android:background="@drawable/ic_menu"
             />
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,25 +33,32 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="REQUEST HOSTORY"
+                android:layout_marginRight="30dp"
+                android:text="Profile"
                 android:textStyle="bold"
                 android:textColor="@color/colorWhite"/>
         </LinearLayout>
     </LinearLayout>
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.8">
-        <android.support.v7.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/location_history_recycler_view"
-            >
+        android:gravity="center"
+        android:layout_weight="1">
 
-        </android.support.v7.widget.RecyclerView>
-
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/workshop_logo"/>
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="19dp"
+        android:textColor="@color/colorWhite"
+        android:text="There are currently no cars being \n towed to your workshop"/>
+
 </LinearLayout>

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@drawable/background"
     android:weightSum="12"
-    tools:context="red.softgrip.com.red.Activities.Profile">
+    tools:context="red.softgrip.com.red.UserActivities.Profile">
 
     <LinearLayout
         android:layout_width="match_parent"
