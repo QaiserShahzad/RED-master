@@ -49,6 +49,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import red.softgrip.com.red.R;
+import red.softgrip.com.red.UserActivities.OrderSummary;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -70,8 +71,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
 //        editTextSPoint=(EditText)findViewById(R.id.et_SPoint);
-        editTextEPoint=(EditText)findViewById(R.id.et_DPoint);
-        buttonSearch=(Button)findViewById(R.id.buttonSearch);
+        editTextEPoint=(EditText)findViewById(R.id.et_EPoint);
+        buttonSearch=(Button)findViewById(R.id.buttonSearchStartLocation);
         buttonNext=(Button)findViewById(R.id.btn_next);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -358,7 +359,36 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         btnOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                myDialog.dismiss();
+                showCarDetailPopup();
+
+            }
+        });
+        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        myDialog.show();
+    }
+
+
+
+    public void showCarDetailPopup() {
+        TextView txtclose;
+        Button confirmCarDetail;
+        myDialog.setContentView(R.layout.popup_design_car_detail);
+        txtclose =(TextView) myDialog.findViewById(R.id.txtclose);
+        txtclose.setText("X");
+        confirmCarDetail = (Button) myDialog.findViewById(R.id.btn_popup_car_detail);
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 myDialog.dismiss();
+            }
+        });
+        confirmCarDetail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               startActivity(new Intent(getApplicationContext(), OrderSummary.class));
+
+
             }
         });
         myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));

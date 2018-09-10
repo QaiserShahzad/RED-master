@@ -65,7 +65,7 @@
                 android:id="@+id/et_SPoint"
                 />
             <Button
-                android:id="@+id/buttonSearch"
+                android:id="@+id/buttonSearchStartLocation"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.2"
@@ -81,19 +81,34 @@
             android:layout_marginLeft="10dp"
             android:background="@color/colorGray"/>
 
-        <android.support.v7.widget.AppCompatEditText
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_blue_location_drawable"
-            android:drawableRight="@drawable/ic_pencil"
-            android:hint="Your location"
-            android:textColorHint="@color/colorGray"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:textAlignment="center"
-            app:backgroundTint="@color/colorGreen"
-            android:id="@+id/et_DPoint"
-            />
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:drawableLeft="@drawable/ic_blue_location_drawable"
+                android:drawableRight="@drawable/ic_pencil"
+                android:hint="Your location"
+                android:textColorHint="@color/colorGray"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textAlignment="center"
+                app:backgroundTint="@color/colorGreen"
+                android:imeOptions="actionSearch"
+                android:id="@+id/et_EPoint"
+                />
+            <Button
+                android:id="@+id/buttonSearchEndLocation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="@drawable/places_ic_search"
+                tools:ignore="InvalidId" />
+        </LinearLayout>
     </LinearLayout>
 
 

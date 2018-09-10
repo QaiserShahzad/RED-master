@@ -6,8 +6,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import red.softgrip.com.red.R;
-import red.softgrip.com.red.UserAdapter.RequestHistoryAdaptor;
-import red.softgrip.com.red.WSAdapter;
+import red.softgrip.com.red.WorkShopAdapter.WSAdapter;
 
 public class NumbrOfOrder extends AppCompatActivity {
 

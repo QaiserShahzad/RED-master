@@ -33,15 +33,7 @@
         <activity android:name=".UserActivities.SignUp" />
         <activity android:name=".UserActivities.VerificationCode" />
         <!-- <activity android:name=".Activities.VarificationCode"></activity> -->
-        <activity android:name=".UserActivities.WelcomeScreen">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
+        <activity android:name=".UserActivities.WelcomeScreen" />
         <activity android:name=".UserActivities.UserProfile" />
         <activity android:name=".UserActivities.Profile" />
         <activity android:name=".UserActivities.EditInformation" />
@@ -67,13 +59,22 @@
         <activity android:name=".UserActivities.OrderSummary" />
         <activity android:name=".WorkShopActivities.NewOrderList" />
         <activity android:name=".WorkShopActivities.NumbrOfOrder">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".WorkShopActivities.OrderNumberActivity" />
+        <activity android:name=".UserActivities.TransitMap" />
+        <activity android:name=".WorkShopActivities.WsShowingMap" />
+        <activity android:name=".SPActivities.SPRegister">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WorkShopActivities.OrderNumberActivity"></activity>
     </application>
 
 </manifest>

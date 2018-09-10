@@ -1,4 +1,4 @@
-package red.softgrip.com.red;
+package red.softgrip.com.red.WorkShopAdapter;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,8 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import red.softgrip.com.red.UserActivities.ComplUsrHstory;
-import red.softgrip.com.red.UserAdapter.RequestHistoryAdaptor;
+import red.softgrip.com.red.R;
 import red.softgrip.com.red.WorkShopActivities.OrderNumberActivity;
 
 /**

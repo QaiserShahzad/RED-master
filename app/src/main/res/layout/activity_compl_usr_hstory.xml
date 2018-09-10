@@ -141,92 +141,92 @@
 
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1.5"
-        android:gravity="center"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="15dp">
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1.5"
+    android:gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="15dp">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:weightSum="3">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="3">
 
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:background="@drawable/ic_red_location" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/ic_red_location" />
 
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:background="@drawable/ic_dots" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_dots" />
 
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:background="@drawable/ic_blue_location" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/start_locate_profile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Start Location"
-                android:textSize="15dp" />
-
-            <TextView
-                android:id="@+id/end_locate_profile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:text="End Location"
-                android:textSize="15dp" />
-        </LinearLayout>
-        <View
-            android:layout_width="170dp"
-            android:layout_height="1dp"/>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/startTime_profile"
-                android:text="22:40"
-                android:textColor="@color/colorGreen"
-                android:textSize="15dp"/>
-            <View
-                android:layout_width="1dp"
-                android:layout_height="30dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/endTme_profile"
-                android:text="02:40"
-                android:textColor="@color/colorGreen"
-                android:textSize="15dp"/>
-        </LinearLayout>
-
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/ic_blue_location" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/start_locate_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Location"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/end_locate_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="End Location"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="170dp"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/startTime_profile"
+            android:text="22:40"
+            android:textColor="@color/colorGreen"
+            android:textSize="15dp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/endTme_profile"
+            android:text="02:40"
+            android:textColor="@color/colorGreen"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
 
 
     <View

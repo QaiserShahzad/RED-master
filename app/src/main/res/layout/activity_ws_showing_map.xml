@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/profile_background"
+    android:weightSum="2"
+    tools:context="red.softgrip.com.red.WorkShopActivities.WsShowingMap">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:gravity="center"
+        android:background="@drawable/app_barr">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/tv_menu"
+            android:background="@drawable/ic_menu"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IN TRANSIT"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+    </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="0.57">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:gravity="center"
+          android:weightSum="2"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp">
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1.5"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:background="@drawable/shape_edit_text"
+              android:layout_marginLeft="30dp"
+              android:layout_marginRight="30dp">
+
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginRight="20dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginBottom="20dp">
+
+
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:weightSum="3">
+
+                  <ImageView
+                      android:layout_width="20dp"
+                      android:layout_height="20dp"
+                      android:layout_gravity="center"
+                      android:layout_weight="1"
+                      android:background="@drawable/ic_red_location" />
+
+                  <ImageView
+                      android:layout_width="20dp"
+                      android:layout_height="30dp"
+                      android:layout_weight="1"
+                      android:background="@drawable/ic_dots" />
+
+                  <ImageView
+                      android:layout_width="20dp"
+                      android:layout_height="20dp"
+                      android:layout_gravity="center"
+                      android:layout_weight="1"
+                      android:background="@drawable/ic_blue_location" />
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:id="@+id/start_locate_transit"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Start Location"
+                      android:textSize="15dp" />
+
+                  <TextView
+                      android:id="@+id/end_locate_transit"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="30dp"
+                      android:text="End Location"
+                      android:textSize="15dp" />
+              </LinearLayout>
+              </LinearLayout>
+          </LinearLayout>
+
+
+      </LinearLayout>
+  </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.28">
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="3"
+        tools:context="red.softgrip.com.red.GoogleMap.MapsActivity" />
+
+    </LinearLayout>
+</LinearLayout>
+

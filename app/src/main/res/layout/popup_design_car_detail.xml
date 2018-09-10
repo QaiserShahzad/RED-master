@@ -150,7 +150,7 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/btn_popup_ok"
+                android:id="@+id/btn_popup_car_detail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/shape_btn_green"
