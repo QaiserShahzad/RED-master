@@ -59,20 +59,33 @@
         <activity android:name=".UserActivities.OrderSummary" />
         <activity android:name=".WorkShopActivities.NewOrderList" />
         <activity android:name=".WorkShopActivities.NumbrOfOrder">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".WorkShopActivities.OrderNumberActivity" />
+        <activity android:name=".UserActivities.TransitMap" />
+        <activity android:name=".WorkShopActivities.WsShowingMap" />
+        <activity android:name=".SPActivities.SPRegister">
             <!--<intent-filter>-->
                 <!--<action android:name="android.intent.action.MAIN" />-->
 
                 <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         </activity>
-        <activity android:name=".WorkShopActivities.OrderNumberActivity" />
-        <activity android:name=".UserActivities.TransitMap" />
-        <activity android:name=".WorkShopActivities.WsShowingMap" />
-        <activity android:name=".SPActivities.SPRegister">
+        <activity android:name=".SPActivities.SPLoging" />
+        <activity android:name=".SPActivities.SPGoOnline" />
+        <activity android:name=".SPActivities.NewRequest" />
+        <activity android:name=".SPActivities.SpOrderNumb" />
+        <activity android:name=".SPActivities.SpInTransit">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
