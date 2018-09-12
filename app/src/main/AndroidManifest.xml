@@ -71,11 +71,13 @@
         <activity android:name=".UserActivities.TransitMap" />
         <activity android:name=".WorkShopActivities.WsShowingMap" />
         <activity android:name=".SPActivities.SPRegister">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity android:name=".SPActivities.SPLoging" />
         <activity android:name=".SPActivities.SPGoOnline" />
@@ -88,6 +90,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SPActivities.OrderCompleted"></activity>
     </application>
 
 </manifest>
